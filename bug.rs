@@ -1,0 +1,1 @@
+fn main() {    let mut x = 5;    let y = &mut x; // y is a mutable reference to x    {        let z = &mut x; // z is another mutable reference to x        *z += 1; // Modifying x through z    }    *y += 2; // This line will panic!}
