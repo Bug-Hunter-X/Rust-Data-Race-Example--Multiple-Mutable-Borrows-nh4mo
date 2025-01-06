@@ -1,0 +1,1 @@
+fn main() {    let mut x = 5;    let y = &mut x; // y is a mutable reference to x    {        let z = x; // z is a copy of x       z += 1; // Modify the copy    }    *y += 2; // This line will now work correctly}   
